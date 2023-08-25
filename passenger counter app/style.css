@@ -1,0 +1,10 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10% 40%;
+}
