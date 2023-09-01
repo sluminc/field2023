@@ -1,0 +1,29 @@
+body {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+img {
+    width: 200px;
+    display: block;
+}
+
+p#shoee {
+    font-weight: bold;
+    
+}
+
+#error {
+    color: red;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+}
