@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-content">
+            <div class="form-header">
+                <h1>Payment Gateway</h1>
+                <i></i>
+                <div class="info">
+                    <h2 id="rpay">RPAY</h2>
+                    <h2>RTX PGP Gateway Admin</h2>
+                </div>
+            </div>
+            <div class="form-data">
+                <form action="./pages/dashboard.html">
+                    <center><h3>Login to your account</h3></center><br>
+                    <p>
+                        <label for="username">User Name</label><br><br>
+                        <input type="text" class="input-box" id="username" name="username" placeholder="Email Address" autocomplete="off" onchange="reqInput()" required><br>
+                    <p class="error" id="user-error"></p><br>
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <a href="./pages/forgot.html" id="forgot">I forgot password</a><br><br>
+                        <div class="password">
+                            <input type="password" class="input-box pwd" id="password" name="password" placeholder="Password" required>
+                        </div>                        
+                    </p>
+                    <p class="error" id="pass-error"></p>
+                    <br>
+                    <input type="checkbox" name="remember" id="remember">Remember me on this device<br><br>
+                    <input type="submit" id="submit-btn" value="Login" onclick="validInput()">
+                </form>
+            </div>
+        </div>        
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

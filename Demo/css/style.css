@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0c3953;
+}
+
+.container {
+    height: 450px;
+    position: relative;
+    width: auto;
+    margin: 0 30%;
+    background-color: antiquewhite;
+}
+
+.form-content {
+    height: 590px;
+    width: 95%;
+    position: absolute;
+    margin: 20px 2.5%;
+    background-color: aliceblue;
+}
+
+.form-header {
+    height: 30%;
+    background-color: hsl(189, 69%, 11%);
+    font-size: 12px;
+    color: #fff;
+    padding: 4% 7% 0 7%;
+}
+
+.form-data {
+    height: 70%;
+    background-color: #fff;
+    padding: 7%;
+}
+
+#forgot {
+    float: right;
+    text-decoration: none;
+    color: #000;
+}
+
+#pwd {
+    float: left;
+}
+
+#remember {
+    margin-right: 10px;
+}
+
+input[type=text], input[type=password], select {
+    color: #000;
+    outline: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+.input-box {
+    padding: 10px;
+    width: 100%;
+    background-color: gainsboro;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    color: hwb(0 58% 41%);
+    font-size: medium;
+    margin-bottom: 8px;
+}
+
+.error {
+    color: red;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.info {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#rpay {
+    margin-bottom: 16px;
+}
+
+
