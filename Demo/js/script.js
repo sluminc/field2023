@@ -1,33 +1,33 @@
-// console.log("Working!");
-
 let userError = document.getElementById("user-error")
 let passError = document.getElementById("pass-error")
 let user = document.getElementById("username")
 let pass = document.getElementById("password")
 
-// // userError.textContent = "Username is required"    
-// // passError.textContent = "Password is required"    
+user.onblur = function() {
+    if (!user.value.includes('@')) { // not email
+      user.classList.add('invalid');
+      userError.innerHTML = 'Please enter a correct email.'
+    }
+  };
+pass.onblur = function() {
+    if (pass.value.length == 0) { // no password
+      pass.classList.add('invalid');
+      passError.innerHTML = 'Password is a required field.'
+    }
+  };
 
-// if (user.value === null) {
-//     userError.textContent = "Username is required"   
-// }
+  user.onfocus = function() {
+    if (this.classList.contains('invalid')) {
+      // remove the "error" indication, because the user wants to re-enter something
+      this.classList.remove('invalid');
+      userError.innerHTML = "";
+    }
+  };
 
-// // passError.textContent = "Password is required"
-
-// console.log(userError);
-// console.log(passError);
-
-// function reqInput(params) {
-//     if (!user) {
-//         userError.textContent = "value entered"
-//     }
-
-//     if (!pass) {
-//         passError.textContent = "value entered"
-//     }
-// }
-
-// function validInput(params) {
-//         userError.textContent = "value entered"
-//         passError.textContent = "value entered"    
-// }
+  pass.onfocus = function() {
+    if (this.classList.contains('invalid')) {
+      // remove the "error" indication, because the user wants to re-enter something
+      this.classList.remove('invalid');
+      passError.innerHTML = "";
+    }
+  };
